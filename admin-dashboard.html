@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-dashboard.css"/>
+    <script src="https://kit.fontawesome.com/55df0fec5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Mom's Art</h2>
+            <nav>
+                <ul>
+                    <li><i class="fas fa-home"></i> Dashboard</li>
+                    <li><i class="fas fa-box"></i> Products</li>
+                    <li><i class="fas fa-users"></i> Users</li>
+                    <li><i class="fas fa-shopping-cart"></i> Orders</li>
+                    <li><i class="fas fa-cog"></i> Settings</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard">
+            <header class="dashboard-header">
+                <h1>Admin Dashboard</h1>
+                <p>Welcome back, Admin!</p>
+            </header>
+
+            <section class="cards">
+                <div class="card">
+                    <h3>Users</h3>
+                    <p>256</p>
+                </div>
+                <div class="card">
+                    <h3>Orders</h3>
+                    <p>142</p>
+                </div>
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <p>Nu 75,000</p>
+                </div>
+                <div class="card">
+                    <h3>Products</h3>
+                    <p>58</p>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1001</td>
+                            <td>Sonam</td>
+                            <td>Nu 1999</td>
+                            <td>Shipped</td>
+                        </tr>
+                        <tr>
+                            <td>#1002</td>
+                            <td>Pema</td>
+                            <td>Nu 5499</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>#1003</td>
+                            <td>Dorji</td>
+                            <td>Nu 1099</td>
+                            <td>Delivered</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

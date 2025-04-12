@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mom's Art - Handmade Collection</title>
+  <script src="https://kit.fontawesome.com/55df0fec5b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <section id="header">
+    <div class="top-header">
+      <div class="logo-container">
+        <a href="index.html"><img src="Product Image/1.png" class="logo" alt="Mom's Art Logo"></a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div id="navbar-container">
+        <ul id="navbar">
+          <li><a class="active" href="Index.html">Home</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a href="Articles.html">Articles</a></li>
+          <li><a href="Stores.html">Stores</a></li>
+          <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+      <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </div>
+
+    <div class="bottom-header">
+      <div id="categories-container">
+        <ul id="categories">
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="decor.html">Decor</a></li>
+        </ul>
+      </div>
+      <form class="input-container" action="" method="GET">
+        <input type="text" class="input" name="query" placeholder="Search..." />
+        <button type="submit" class="magnifier">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Hero Banner -->
+  <div class="place-card">
+    <section id="hero">
+      <div class="hero-text-left">
+        <h2>All Handmade Textiles</h2>
+        <h3>On all Products</h3>
+        <h2>Sales up to 70%!!!</h2>
+        <button><a href="Sale.html">Shop Now </a><i class="fa-solid fa-bag-shopping"></i></button>
+      </div>
+      <div class="hero-image">
+        <img src="Product Image/2.png" alt="Model Wearing Kira">
+        <div class="hero-text-right">
+          <p>New Autumn Winter 2025 Women Collection Available Now</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Product Section -->
+  <section id="product" class="section-p1">
+    <h2>Featured Products</h2>
+    <p>Jigme Choden Hor Collection</p>
+
+    <!-- Filter and Sort Controls -->
+    <div class="filter-sort-container">
+      <div class="filter">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter">
+          <option value="all">All</option>
+          <option value="Kira">Kira</option>
+          <option value="Gho">Gho</option>
+        </select>
+      </div>
+      <div class="sort">
+        <label for="price-sort">Sort by Price:</label>
+        <select id="price-sort">
+          <option value="default">Default</option>
+          <option value="asc">Low to High</option>
+          <option value="desc">High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="pro-container">
+
+      <!-- Sample Product Card -->
+      <div class="pro">
+        <img src="Product Image/p1.png" alt="7 Wrap Stripes Kira" />
+        <div class="des">
+          <span><a href="JCKiras.html" class="Jigme-Featured">Kira</a></span>
+          <h5><a href="p1.html" class="Jigme-Featured">7 Wrap Stripes</a></h5>
+          <div class="star">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Nu 11999</p>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+
+      <!-- Repeat similar product cards for p2 to p8 (you already had these) -->
+      <!-- Apply the same fixes to all product blocks: alt tags, corrected links, closed p tags -->
+
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <div class="newstext">
+      <h4>Join Our Newsletter!</h4>
+      <p>Get E-mail about our latest products and special offers</p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your Email Address">
+      <button>Sign Up</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="column">
+      <h4>Contact</h4>
+      <p><strong>Address: </strong>3 Sherab Lam NPPF Colony Phuntsholing</p>
+      <p><strong>Phone: </strong>097517717070</p>
+      <p><strong>Email: </strong>nedearies@gmail.com</p>
+    </div>
+
+    <div class="column">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">Items and Sizes</a>
+      <a href="#">Payment and Invoices</a>
+      <a href="#">My Purchases</a>
+    </div>
+
+    <div class="column">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-x-twitter"></i> 
+      </div>
+    </div>
+
+    <div class="column">
+      <h4>About Us</h4>
+      <a href="#">Company</a>
+      <a href="#">About Us</a>
+      <a href="#">Stores</a>
+    </div>
+
+    <div class="column">
+      <a href="index.html"><img src="Product Image/1.png" class="logo" alt="Footer Logo"></a>
+    </div>
+
+    <div class="copyright">
+      <p>All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Menu Toggle -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navbar").classList.toggle("active");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

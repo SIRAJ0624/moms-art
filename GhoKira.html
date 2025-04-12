@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gho and Kira - Traditional Dress of Bhutan</title>
+  <script src="https://kit.fontawesome.com/55df0fec5b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <section id="header">
+    <div class="top-header">
+      <div class="logo-container">
+        <a href="index.html"><img src="Product Image/1.png" class="logo" alt="Logo"></a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div id="navbar-container">
+        <ul id="navbar">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Contact.html">Shop</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a class="active" href="Articles.html">Articles</a></li>
+          <li><a href="Stores.html">Stores</a></li>
+          <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+      <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </div>
+
+    <div class="bottom-header">
+      <div id="categories-container">
+        <ul id="categories">
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="Decor.html">Decor</a></li>
+        </ul>
+      </div>
+      <form class="input-container" action="" method="GET">
+        <input type="text" class="input" name="query" placeholder="Search...">
+        <button type="submit" class="magnifier">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Main Article Section -->
+  <section class="articlesection">
+    <div class="container">
+      <h1>Gho and Kira: The Traditional Dress of Bhutan</h1>
+
+      <p>
+        There was a time when you could often tell where a person was from by looking at their outfits, 
+        but with modernisation, traditional attires are slowly becoming something of the past. In Bhutan however, 
+        the traditional dress of <strong>Gho</strong> for men and <strong>Kira</strong> for women remains alive and culturally significant.
+      </p>
+
+      <p>
+        Bhutanese traditional attire is not only colorful and eye-catching, but also holds immense cultural value. 
+        These clothes are expressions of Bhutanese identity, not just fabrics sewn together.
+      </p>
+
+      <p>
+        On any ordinary day, you will see Bhutanese people walking down the street or entering workplaces 
+        gracefully dressed in their traditional attire.
+      </p>
+
+      <h2>The Bhutanese Traditional Dress for Men</h2>
+      <h3>The Gho</h3>
+      <p>
+        Men in Bhutan wear a knee-length robe called the <strong>Gho</strong>, wrapped around the body and tied with a belt. 
+        It forms a pouch often referred to as “the largest pocket in the world.” It is worn daily, 
+        especially by those in schools, colleges, or government sectors.
+      </p>
+
+      <h2>The Bhutanese Traditional Dress for Women</h2>
+      <h3>The Kira</h3>
+      <p>
+        Bhutanese women wear an ankle-length dress called the <strong>Kira</strong>, 
+        which is fastened at the shoulders with traditional brooches (Koma). It can also be worn as a half-length skirt.
+      </p>
+
+      <p>
+        Kiras are traditionally handwoven using raw silk with intricate patterns. 
+        On special occasions, women wear brightly colored and complex Kiras, 
+        while daily wear involves simpler and lighter versions. Fashion-forward Bhutanese women often accessorize 
+        their Kiras with stylish blouses, jewelry, and matching footwear.
+      </p>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section id="newsletter">
+    <div class="newstext">
+      <h4>Join Our Newsletter!</h4>
+      <p>Get emails about our latest products and special offers</p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your Email Address">
+      <button>Sign Up</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="column">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 3 Sherab Lam NPPF Colony Phuntsholing</p>
+      <p><strong>Phone:</strong> 097517717070</p>
+      <p><strong>Email:</strong> nedearies@gmail.com</p>
+    </div>
+
+    <div class="column">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">Items and Sizes</a>
+      <a href="#">Payment and Invoices</a>
+      <a href="#">My Purchases</a>
+    </div>
+
+    <div class="column">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-x-twitter"></i> 
+      </div>
+    </div>
+
+    <div class="column">
+      <h4>About Us</h4>
+      <a href="#">Company</a>
+      <a href="#">About Us</a>
+      <a href="#">Stores</a>
+    </div>
+
+    <div class="column">
+      <img src="Product Image/1.png" alt="Company Logo" />
+    </div>
+
+    <div class="copyright">
+      <p>All rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navbar").classList.toggle("active");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>

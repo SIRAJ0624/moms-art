@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <script src="https://kit.fontawesome.com/55df0fec5b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <section id="header">
+        <div class="top-header">
+            <div class="logo-container">
+                <a href="index.html"><img src="Product Image/1.png" class="logo" alt="Logo"></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div id="navbar-container">
+                <ul id="navbar">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Contact.html">Shop</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Articles.html">Articles</a></li>
+                    <li><a class="active" href="Stores.html">Stores</a></li>
+                    <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+            <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+        </div>
+    
+        <div class="bottom-header">
+            <div id="categories-container">
+                <ul id="categories">
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="kids.html">Decor</a></li>
+                </ul>
+            </div>
+            <form class="input-container" action="" method="GET">
+                <input type="text" class="input" name="query" placeholder="Search...">
+                <button type="submit" class="magnifier">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+    <section id="Find">
+        <form class="store container">
+            <select name="category" class="category-dropdown">
+                <option value="" disabled selected>Categories</option>
+                <option value="clothes">Clothes</option>
+                <option value="home-decor">Home Decor</option>
+                <option value="accessories">Accessories</option>
+            </select>
+    
+            <select name="region" class="region-dropdown">
+                <option value="" disabled selected>Region</option>
+                <option value="bhutan">Bhutan</option>
+                <option value="nepal">Nepal</option>
+                <option value="pakistan">Pakistan</option>
+            </select>
+    
+            <select name="sort" class="sort-dropdown">
+                <option value="" disabled selected>Sort</option>
+                <option value="newest-to-oldest">Newest to Oldest</option>
+                <option value="oldest-to-newest">Oldest to Newest</option>
+            </select>
+    
+            <button type="submit">Find Store</button>
+        </form>
+    
+    </section>
+    
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>
+                Join Our Newsletter!
+            <p> Get E-mail about our latest products and special offers </p>
+            </h4>
+        </div>
+        <div class="form">
+            <input  type="text" placeholder="Your Email Address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+    
+
+    <footer class="site-footer">
+        <div class="column">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>3 Sherab Lam NPPF Colony Phuntsholing</p>
+            <p><strong>Phone: </strong>097517717070</p>
+            <p><strong>Email: </strong>nedearies@gmail.com</p>
+        </div>
+    
+        <div class="column">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Items and Sizes</a>
+            <a href="#">Payment and Invoices</a>
+            <a href="#">My Purchases</a>
+        </div> 
+    
+        <div class="column">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i> 
+            </div>
+        </div>
+    
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Company</a>
+            <a href="#">About Us</a>
+            <a href="#">Stores</a>
+        </div> 
+        <div class="column">
+            <img src="Product Image/1.png" alt="Company Logo">
+        </div> 
+    
+        <div class="copyright">
+            <p>All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navbar").classList.toggle("active");
+            document.getElementById("overlay").classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>
