@@ -2,93 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mom’s Art – Wireframe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wireframe – Mom's Art</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <h1>[Logo Placeholder]</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Shop</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Header -->
+  <section id="header">
+    <div class="top-header">
+      <div class="logo-container">
+        <img src="placeholder-logo.png" class="logo" alt="Logo Placeholder" />
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div id="navbar-container">
+        <ul id="navbar">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+      <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </div>
 
-  <hr>
-
-  <!-- Hero Section -->
-  <section>
-    <h2>[Hero Image Placeholder]</h2>
-    <p>All Handmade Textiles</p>
-    <p>Sales up to 70%!!!</p>
-    <button>Shop Now</button>
-    <p>New Autumn Winter 2025 Collection Available Now</p>
+    <div class="bottom-header">
+      <div id="categories-container">
+        <ul id="categories">
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Decor</a></li>
+        </ul>
+      </div>
+      <form class="input-container">
+        <input type="text" class="input" placeholder="Search..." />
+        <button type="submit" class="magnifier">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
   </section>
 
-  <hr>
+  <!-- Hero Banner -->
+  <div class="place-card">
+    <section id="hero">
+      <div class="hero-text-left">
+        <h2>[Hero Headline]</h2>
+        <h3>[Subheadline]</h3>
+        <h2>[Promo Text]</h2>
+        <button>Shop Now</button>
+      </div>
+      <div class="hero-image">
+        <img src="placeholder-hero.jpg" alt="Hero Image Placeholder" />
+        <div class="hero-text-right">
+          <p>[New collection announcement]</p>
+        </div>
+      </div>
+    </section>
+  </div>
 
-  <!-- Featured Products Section -->
-  <section>
+  <!-- Product Section -->
+  <section id="product" class="section-p1">
     <h2>Featured Products</h2>
-    <h3>[Jigme Choden Hor Collection]</h3>
+    <p>[Collection Name]</p>
 
-    <ul>
-      <li>[Kira – 7 Wrap Stripes – Nu 11,999]</li>
-      <li>[Gho – 5 Wrap Stripes – Nu 10,549]</li>
-      <li>[Kira – 3 Wrap Stripes – Nu 5,199]</li>
-      <li>[Kira – Mixed Pattern – Nu 22,259]</li>
-      <li>[Kira – 3 Wrap – Nu 5,299]</li>
-      <li>[Kira – 3 Wrap Kira – Nu 4,999]</li>
-      <li>[Gho – 5 Wrap – Nu 16,999]</li>
-      <li>[Gho – 7 Wrap Silk – Nu 19,999]</li>
-    </ul>
+    <div class="filter-sort-container">
+      <div class="filter">
+        <label>Filter by Category:</label>
+        <select>
+          <option>All</option>
+          <option>Kira</option>
+          <option>Gho</option>
+        </select>
+      </div>
+      <div class="sort">
+        <label>Sort by Price:</label>
+        <select>
+          <option>Default</option>
+          <option>Low to High</option>
+          <option>High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="pro-container">
+      <div class="pro">
+        <img src="placeholder-product.jpg" alt="Product" />
+        <div class="des">
+          <span>Product Type</span>
+          <h5>Product Title</h5>
+          <div class="star">
+            ★★★★★
+          </div>
+          <p>Nu Price</p>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <!-- Add more sample cards here if needed -->
+    </div>
   </section>
 
-  <hr>
-
-  <!-- Newsletter Signup -->
-  <section>
-    <h2>Join Our Newsletter!</h2>
-    <p>Get E-mail about our latest products and special offers</p>
-    <form>
-      <label>Your Email Address:</label>
-      <input type="email" placeholder="example@email.com" />
-      <button type="submit">Sign Up</button>
-    </form>
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <div class="newstext">
+      <h4>Join Our Newsletter!</h4>
+      <p>Get updates about our latest products and offers</p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your Email Address" />
+      <button>Sign Up</button>
+    </div>
   </section>
 
-  <hr>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="column">
+      <h4>Contact</h4>
+      <p>Address: Placeholder St., City</p>
+      <p>Phone: 0000000000</p>
+      <p>Email: email@domain.com</p>
+    </div>
 
-  <!-- Footer Section -->
-  <footer>
-    <h3>Contact</h3>
-    <p>Address: 3 Sherab Lam NPPF Colony Phuntsholing</p>
-    <p>Phone: 097517717070</p>
-    <p>Email: nedearies@gmail.com</p>
+    <div class="column">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">Items and Sizes</a>
+      <a href="#">My Purchases</a>
+    </div>
 
-    <h3>My Account</h3>
-    <ul>
-      <li>Sign In</li>
-      <li>Items and Sizes</li>
-      <li>Payment and Invoices</li>
-      <li>My Purchases</li>
-    </ul>
+    <div class="column">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
+    </div>
 
-    <h3>About Us</h3>
-    <ul>
-      <li>Company</li>
-      <li>Stores</li>
-    </ul>
+    <div class="column">
+      <h4>About Us</h4>
+      <a href="#">Company</a>
+      <a href="#">Stores</a>
+    </div>
 
-    <p>[Footer Logo Placeholder]</p>
-    <p>All rights reserved</p>
+    <div class="column">
+      <img src="placeholder-logo-footer.png" class="logo" alt="Footer Logo Placeholder" />
+    </div>
+
+    <div class="copyright">
+      <p>All rights reserved</p>
+    </div>
   </footer>
+
+  <!-- JS for menu toggle -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navbar").classList.toggle("active");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+  </script>
 
 </body>
 </html>
