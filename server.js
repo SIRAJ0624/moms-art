@@ -35,3 +35,18 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
+app.post('/admin/add-product', (req, res) => {
+    const { name, category, price, image } = req.body;
+
+    const sql = 'INSERT INTO products (name, category, price, image) VALUES (?, ?, ?, ?)';
+    db.query(sql, [name, category, price, image], (err, result) => {
+        if (err) {
+            console.error('Error inserting product:', err);
+            return res.status(500).send('Database insert failed');
+        }
+        console.log('Product inserted:', result.insertId);
+        res.send('Product added successfully');
+    });
+});
+
